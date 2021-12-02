@@ -12,8 +12,8 @@ input_seq = "CAGGATTTGTTTTATCCAACTCATCCCTTGACATCGTGCTTCACGATACATACTATGTAGTAGCCCA
 input_feature = generateNumericSample(seq=input_seq)
 print(input_feature)
 
-a=[input_feature]#包含两个不同的子列表[1,2,3,4]和[5,6,7,8]
-data=DataFrame(a)#这时候是以行为标准写入的
+a=[input_feature]
+data=DataFrame(a)
 data.columns = ['ORF.Max.Len', 'ORF.Max.Cov', 'hexamer_orf_step1', 'hexamer_orf_step3', 'hexamer_Full_length_step1',
              'hexamer_Full_length_step3', 'FickettScore_orf', 'FickettScore_fulllength', 'freq_A', 'freq_T', 'freq_G',
              'freq_C', 'AT_trans', 'AG_trans', 'AC_trans', 'TG_trans', 'TC_trans', 'GC_trans', 'A0_dis', 'A1_dis',
