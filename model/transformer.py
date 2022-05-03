@@ -159,9 +159,7 @@ class ALBERT(nn.Module):
 
 
 if __name__ == "__main__":
-    '''
-        暂时未用到 tensorboard,,, QAQ
-    '''
+
     # from torch.utils.tensorboard import SummaryWriter
     testInput = torch.randn(size=[5, 48, 1])
     testModel = ALBERT(in_features=1, d_model=256, sequence_len=48, heads=8, num_labels=1, total_reuse_times=1,
@@ -169,9 +167,6 @@ if __name__ == "__main__":
                        )
     print(testModel)
 
-    '''
-        tensorboardX 面板的模型调试
-    '''
     # writer = SummaryWriter(log_dir="./run/")
     # writer.add_graph(testModel, testInput)
     # writer.close()
