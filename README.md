@@ -1,6 +1,6 @@
 # LncReader
 
-### Test Dataset Descriptions (in this )
+### Test Dataset Descriptions (stored in this repository)
 
 #### 1. Mouse coding lncRNA Test Dataset
 ***File path***: `LncReader/test/Mouse_coding_lncRNA_test_dataset.fa`
