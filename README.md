@@ -17,34 +17,33 @@ Similarly, this test dataset includes data specifically for fruit fly coding lon
 
 This test dataset includes data specifically for leukaemia cell lines.
 
-### Usage Guide
-#### Input File
+### How to run LncReader?
+#### 1. Input File
 Prepare your input file, which should be in fasta format. For example, the file name could be `input.fasta`.
 
-#### Output File
+#### 2. Output File
 Define a name for your output file, which will be used to store the results processed by the script. For example, you might name your output file `output.txt`.
 
-#### Instructions for Use
-
-1. **Open the Command Line Interface**:
+#### 3 Download this repository and open the Command Line Interface ####
    Open a terminal (Linux or MacOS) or Command Prompt/PowerShell (Windows).
 
-2. **Navigate to the Directory Containing the Script**:
+#### 4 Navigate to the Directory Containing the Script ####
    Use the `cd` command to navigate to the directory where your script is saved. For example:
    ```bash
-   cd /path/to/script
+   cd LncReader/myPackage/
+   ```
 
-3. **Run the Script**:
+#### 5 Run the Script ####
    Use the following command to run the script, replacing <input_file> and <output_file> with your actual file paths.
    ```bash
    python run_lncReader.py <input_file> <output_file>
    ```
    For example:
    ```bash
-   python run_lncReader.py input.fasta output.txt
+   python run_lncReader.py ../test/Drosophila_coding_lncRNA_test_dataset.fa output.txt
    ```
 
-4. **Example Output**
+#### 6 Example Output ####
    The output file will contain the identifier of each sequence, the calculated score (the probility of dual functional lncRNA), and the sequence itself. For example:
    ```python
    >Sequence1  0.4789213  GATTACAGATTACA...
