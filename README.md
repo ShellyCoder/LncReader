@@ -5,13 +5,8 @@
   - [Mouse coding lncRNA Test Dataset](#1-mouse-coding-lncrna-test-dataset)
   - [Fruit Fly coding lncRNA Test Dataset](#2-fruit-fly-coding-lncrna-test-dataset)
   - [Joint analysis of RNAseq-Ribosome-MS Test Dataset](#3-joint-analysis-of-rnaseq-ribosome-ms-test-dataset)
-- [Usage Guide](#usage-guide)
-  - [Runtime Environment](#runtime-environment)
-  - [Script File](#script-file)
-  - [Input File](#input-file)
-  - [Output File](#output-file)
-  - [Instructions for Use](#instructions-for-use)
-  - [Example Output](#example-output)
+- [How-to-run-LncReader?](#how-to-run-lncreader)
+- [What's-the-aim-of-LncReader?](#whats-the-aim-of-lncreader)
 
 
 ### Test Dataset Descriptions (stored in this repository)
@@ -31,7 +26,7 @@ Similarly, this test dataset includes data specifically for fruit fly coding lon
 
 This test dataset includes data specifically for leukaemia cell lines.
 
-### How to run LncReader?
+### How to run LncReader
 #### 1. Input File
 Prepare your input file, which should be in fasta format. For example, the file name could be `input.fasta`.
 
@@ -66,7 +61,7 @@ Define a name for your output file, which will be used to store the results proc
    ```
 
 -------------------------------------------------
-### What's the aim of LncReader?
+### What's the aim of LncReader
 
 We aim to explore whether LncReader provides a sophisticated and practical tool to identify dual functional lncRNAs and explore potentially lncRNA-encoded micropeptides, which might assist dissection the key roles of dual functional lncRNAs in either physiology or pathology conditions.
 
