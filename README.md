@@ -1,5 +1,19 @@
 # LncReader
 
+## Table of Contents
+- [Test Dataset Descriptions](#test-dataset-descriptions-stored-in-this-repository)
+  - [Mouse coding lncRNA Test Dataset](#1-mouse-coding-lncrna-test-dataset)
+  - [Fruit Fly coding lncRNA Test Dataset](#2-fruit-fly-coding-lncrna-test-dataset)
+  - [Joint analysis of RNAseq-Ribosome-MS Test Dataset](#3-joint-analysis-of-rnaseq-ribosome-ms-test-dataset)
+- [Usage Guide](#usage-guide)
+  - [Runtime Environment](#runtime-environment)
+  - [Script File](#script-file)
+  - [Input File](#input-file)
+  - [Output File](#output-file)
+  - [Instructions for Use](#instructions-for-use)
+  - [Example Output](#example-output)
+
+
 ### Test Dataset Descriptions (stored in this repository)
 
 #### 1. Mouse coding lncRNA Test Dataset
@@ -24,16 +38,16 @@ Prepare your input file, which should be in fasta format. For example, the file 
 #### 2. Output File
 Define a name for your output file, which will be used to store the results processed by the script. For example, you might name your output file `output.txt`.
 
-#### 3 Download this repository and open the Command Line Interface ####
+#### 3. Download this repository and open the Command Line Interface ####
    Open a terminal (Linux or MacOS) or Command Prompt/PowerShell (Windows).
 
-#### 4 Navigate to the Directory Containing the Script ####
+#### 4. Navigate to the Directory Containing the Script ####
    Use the `cd` command to navigate to the directory where your script is saved. For example:
    ```bash
    cd LncReader/myPackage/
    ```
 
-#### 5 Run the Script ####
+#### 5. Run the Script ####
    Use the following command to run the script, replacing <input_file> and <output_file> with your actual file paths.
    ```bash
    python run_lncReader.py <input_file> <output_file>
@@ -43,7 +57,7 @@ Define a name for your output file, which will be used to store the results proc
    python run_lncReader.py ../test/Drosophila_coding_lncRNA_test_dataset.fa output.txt
    ```
 
-#### 6 Example Output ####
+#### 6. Example Output ####
    The output file will contain the identifier of each sequence, the calculated score (the probility of dual functional lncRNA), and the sequence itself. For example:
    ```python
    >Sequence1  0.4789213  GATTACAGATTACA...
@@ -51,9 +65,8 @@ Define a name for your output file, which will be used to store the results proc
     ...
    ```
 
-
-
 -------------------------------------------------
+### What's the aim of LncReader?
 
 We aim to explore whether LncReader provides a sophisticated and practical tool to identify dual functional lncRNAs and explore potentially lncRNA-encoded micropeptides, which might assist dissection the key roles of dual functional lncRNAs in either physiology or pathology conditions.
 
